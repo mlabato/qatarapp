@@ -1,11 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StyleSheet, Text } from "react-native";
+
+import Header from "./components/layout/Header";
+import Navbar from "./components/layout/Navbar";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Qatar APP</Text>
-      <StatusBar style="auto" />
+      <Header />
+      <Navbar />
+      
     </View>
   );
 }
@@ -13,8 +16,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
+    alignItems: "center",
+    justifyContent: "center",
+    fontFamily: "arabic",
   },
 });
